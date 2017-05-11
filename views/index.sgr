@@ -1,0 +1,985 @@
+extends(src='layout.sgr')
+  block(name='content')
+    // Page Content
+    .container
+      .content-area
+        // LANDING PAGE
+        .landingPage
+          div
+            img(src='img/ChessClub_Logo_w_address.svg', alt='')
+            span.applyMembership APPLY FOR MEMBERSHIP
+          .down_arrow
+        // RESTAURANT NAME PAGE
+        .pages.pageBg.secondPage
+          .stickyRestaurantName
+            | THE RESTAURANT
+            br
+            | BY
+            .restaurantName
+              img(src='img/ChessClub_Restaurant_logo.svg', alt='JACKSON BOXER')
+        // RESTAURANT MENU DETAILS PAGE
+        .pages.pageBg.restaurantPage
+          ul.restaurantMenu
+            li.active(rel='#breakfast') BREAKFAST
+            li(rel='#lunch') LUNCH
+            li(rel='#dinner') DINNER
+            li(rel='#barfoodday') BAR FOOD DAY
+            li(rel='#barfoodnight') BAR FOOD NIGHT
+          .restaurantMenuDesc
+            .restaurantMenuMobileFixedWrap
+              .restaurantMenuMobileOuterWrap
+                .restaurantMenuMobileWrap
+                  ul#restaurantMenuMobile.restaurantMenuMobile
+                    li.active(rel='#breakfast') BREAKFAST
+                    li(rel='#lunch') LUNCH
+                    li(rel='#dinner') DINNER
+                    li(rel='#barfoodday') BAR FOOD DAY
+                    li(rel='#barfoodnight') BAR FOOD NIGHT
+            .vertical-divider-1.mobile
+            .restaurantDetailMobileOuterWrap.clearfix
+              .restaurantDetailMobileWrap
+                #breakfast.setRestaurantMenu.active
+                  h2 BREAKFAST
+                  .vertical-divider-1
+                  p
+                    | VEAL TARTARE, CRISPY CAVIAR,
+                    br
+                    |                                     AROMATIC WINKLES & PICKLED SUNFLOWERS
+                    br
+                    |                                     Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011
+                    br
+                    |                                     £8.50
+                  p
+                    | PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE
+                    br
+                    |                                     Côtes De Provence – Le Duclaux, Ste Victoire 2014
+                    br
+                    |                                     £6.00
+                  p
+                    | SEARED MULLET, TOMATO LIQUOR & COURGETTE
+                    br
+                    |                                     FLOWER “MARINIERE”
+                    br
+                    |                                     Minervois – Hegarty-Chamans, Chamans Blanc 2010
+                    br
+                    |                                     £8.00
+                  p
+                    | BARBECUED WOOD PIGEON, CORN SURPRISE,
+                    br
+                    |                                     OYSTER & WORCESTERSHIRE
+                    br
+                    |                                     Madiran – Château de Crouseilles 2001
+                    br
+                    |                                     £11.50
+                  p
+                    | CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND
+                    br
+                    |                                     Jurançon – Camin Larredya, Costat Darrèr 2013
+                    br
+                    |                                     £7.50
+                  p
+                    | FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL
+                    br
+                    |                                     Champagne - Lallier Grand Cru, Brut Rosé
+                    br
+                    |                                     £11.00
+                #lunch.setRestaurantMenu.active
+                  h2 LUNCH
+                  .vertical-divider-1
+                  p
+                    | VEAL TARTARE, CRISPY CAVIAR,
+                    br
+                    |                                     AROMATIC WINKLES & PICKLED SUNFLOWERS
+                    br
+                    |                                     Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011
+                    br
+                    |                                     £8.50
+                  p
+                    | PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE
+                    br
+                    |                                     Côtes De Provence – Le Duclaux, Ste Victoire 2014
+                    br
+                    |                                     £6.00
+                  p
+                    | SEARED MULLET, TOMATO LIQUOR & COURGETTE
+                    br
+                    |                                     FLOWER “MARINIERE”
+                    br
+                    |                                     Minervois – Hegarty-Chamans, Chamans Blanc 2010
+                    br
+                    |                                     £8.00
+                  p
+                    | BARBECUED WOOD PIGEON, CORN SURPRISE,
+                    br
+                    |                                     OYSTER & WORCESTERSHIRE
+                    br
+                    |                                     Madiran – Château de Crouseilles 2001
+                    br
+                    |                                     £11.50
+                  p
+                    | CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND
+                    br
+                    |                                     Jurançon – Camin Larredya, Costat Darrèr 2013
+                    br
+                    |                                     £7.50
+                  p
+                    | FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL
+                    br
+                    |                                     Champagne - Lallier Grand Cru, Brut Rosé
+                    br
+                    |                                     £11.00
+                #dinner.setRestaurantMenu.active
+                  h2 DINNER
+                  .vertical-divider-1
+                  p
+                    | VEAL TARTARE, CRISPY CAVIAR,
+                    br
+                    |                                     AROMATIC WINKLES & PICKLED SUNFLOWERS
+                    br
+                    |                                     Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011
+                    br
+                    |                                     £8.50
+                  p
+                    | PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE
+                    br
+                    |                                     Côtes De Provence – Le Duclaux, Ste Victoire 2014
+                    br
+                    |                                     £6.00
+                  p
+                    | SEARED MULLET, TOMATO LIQUOR & COURGETTE
+                    br
+                    |                                     FLOWER “MARINIERE”
+                    br
+                    |                                     Minervois – Hegarty-Chamans, Chamans Blanc 2010
+                    br
+                    |                                     £8.00
+                  p
+                    | BARBECUED WOOD PIGEON, CORN SURPRISE,
+                    br
+                    |                                     OYSTER & WORCESTERSHIRE
+                    br
+                    |                                     Madiran – Château de Crouseilles 2001
+                    br
+                    |                                     £11.50
+                  p
+                    | CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND
+                    br
+                    |                                     Jurançon – Camin Larredya, Costat Darrèr 2013
+                    br
+                    |                                     £7.50
+                  p
+                    | FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL
+                    br
+                    |                                     Champagne - Lallier Grand Cru, Brut Rosé
+                    br
+                    |                                     £11.00
+                #barfoodday.setRestaurantMenu.active
+                  h2 BAR FOOD DAY
+                  .vertical-divider-1
+                  p
+                    | VEAL TARTARE, CRISPY CAVIAR,
+                    br
+                    |                                     AROMATIC WINKLES & PICKLED SUNFLOWERS
+                    br
+                    |                                     Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011
+                    br
+                    |                                     £8.50
+                  p
+                    | PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE
+                    br
+                    |                                     Côtes De Provence – Le Duclaux, Ste Victoire 2014
+                    br
+                    |                                     £6.00
+                  p
+                    | SEARED MULLET, TOMATO LIQUOR & COURGETTE
+                    br
+                    |                                     FLOWER “MARINIERE”
+                    br
+                    |                                     Minervois – Hegarty-Chamans, Chamans Blanc 2010
+                    br
+                    |                                     £8.00
+                  p
+                    | BARBECUED WOOD PIGEON, CORN SURPRISE,
+                    br
+                    |                                     OYSTER & WORCESTERSHIRE
+                    br
+                    |                                     Madiran – Château de Crouseilles 2001
+                    br
+                    |                                     £11.50
+                  p
+                    | CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND
+                    br
+                    |                                     Jurançon – Camin Larredya, Costat Darrèr 2013
+                    br
+                    |                                     £7.50
+                  p
+                    | FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL
+                    br
+                    |                                     Champagne - Lallier Grand Cru, Brut Rosé
+                    br
+                    |                                     £11.00
+                #barfoodnight.setRestaurantMenu.active
+                  h2 BAR FOOD NIGHT
+                  .vertical-divider-1
+                  p
+                    | VEAL TARTARE, CRISPY CAVIAR,
+                    br
+                    |                                     AROMATIC WINKLES & PICKLED SUNFLOWERS
+                    br
+                    |                                     Côtes Du Jura – Chevassu Fassenet, Savagnin Ouillé 2011
+                    br
+                    |                                     £8.50
+                  p
+                    | PRESSED DUCK FOIE GRAS, CRAB & PIPERADE BASQUAISE
+                    br
+                    |                                     Côtes De Provence – Le Duclaux, Ste Victoire 2014
+                    br
+                    |                                     £6.00
+                  p
+                    | SEARED MULLET, TOMATO LIQUOR & COURGETTE
+                    br
+                    |                                     FLOWER “MARINIERE”
+                    br
+                    |                                     Minervois – Hegarty-Chamans, Chamans Blanc 2010
+                    br
+                    |                                     £8.00
+                  p
+                    | BARBECUED WOOD PIGEON, CORN SURPRISE,
+                    br
+                    |                                     OYSTER & WORCESTERSHIRE
+                    br
+                    |                                     Madiran – Château de Crouseilles 2001
+                    br
+                    |                                     £11.50
+                  p
+                    | CABECOU DE ROCAMADOUR, GOOSEBERRY & TAMARIND
+                    br
+                    |                                     Jurançon – Camin Larredya, Costat Darrèr 2013
+                    br
+                    |                                     £7.50
+                  p
+                    | FROSTED VIOLET AND RASPBERRY, BLACKCURRANT & BEETROOT GEL
+                    br
+                    |                                     Champagne - Lallier Grand Cru, Brut Rosé
+                    br
+                    |                                     £11.00
+        // FORM TABS
+        .tabContainerWrap
+          // MEMBER SIGN UP
+          #signupWrap.tabWrap.light.active(rel='0')
+            .tabClose.alertMsg(backtab='home', oldid='#signupWrap')
+            h2 Register
+            .vertical-divider-1
+            form(ng-controller='signupForm', name='signupForm', novalidate='')
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='firstname', ng-model='firstname', ng-pattern='[a-zA-Z][a-zA-Z ]+[a-zA-Z]$', placeholder='First Name*', required='')
+                  span.errMsg(ng-show='signupForm.firstname.$touched && signupForm.firstname.$invalid')
+                    span(ng-show='signupForm.firstname.$error.required') First Name is required.
+                    span(ng-show='signupForm.firstname.$error.pattern') Please use only Alphabets.
+                .formWrapRight
+                  input.txtBox(type='text', name='lastname', ng-model='lastname', ng-pattern='[a-zA-Z][a-zA-Z ]+[a-zA-Z]$', placeholder='Last Name*', required='')
+                  span.errMsg(ng-show='signupForm.lastname.$touched && signupForm.lastname.$invalid')
+                    span(ng-show='signupForm.lastname.$error.required') Last Name is required.
+                    span(ng-show='signupForm.lastname.$error.pattern') Please use only Alphabets.
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='preferredname', ng-model='preferredname', placeholder='Preferred Name*', required='')
+                  span.errMsg(ng-show='signupForm.preferredname.$touched && signupForm.preferredname.$invalid')
+                    span(ng-show='signupForm.preferredname.$error.required') Preferred Name is required.
+                .formWrapRight
+                  input.txtBox(type='email', name='emailaddress', ng-model='emailaddress', placeholder='Email Address*', required='')
+                  span.errMsg(ng-show='signupForm.emailaddress.$touched && signupForm.emailaddress.$invalid')
+                    span(ng-show='signupForm.emailaddress.$error.required') Email Address is required.
+                    span(ng-show='signupForm.emailaddress.$error.email') Invalid Email Address.
+                    span(ng-show='signupForm.emailaddress.$dirty && signupForm.emailaddress.$error.unique') Email already in use
+              .formWrap
+                .formWrapRight
+                  input.txtBox(type='email', name='reemailaddress', ng-model='reemailaddress', placeholder='Re-enter Email Address*', ng-pattern='emailaddress', required='')
+                  span.errMsg(ng-show='signupForm.reemailaddress.$touched && signupForm.reemailaddress.$invalid')
+                    span(ng-show='signupForm.reemailaddress.$error.required') Re-enter Email Address is required.
+                    span(ng-show='signupForm.reemailaddress.$error.email') Invalid Email Address.
+                    span(ng-show='signupForm.reemailaddress.$error.pattern') Not a match with Email Address.
+              p.marginBot_15 Please choose a membership type
+              .text-center.membershipTypeParent
+                .membershipTypeOuter
+                  #annualDiv.membershipType
+                    input#radio_1(type='radio', value='annual', name='membershipType', ng-model='membershipType', required='')
+                    span ANNUAL
+                    .membershipTypeDetails
+                      div
+                        .memberTitle ANNUAL
+                        .memberFee £ 45 / Month
+                        .memberOr or
+                        .memberFee 
+                          | £ 450
+                          | / Year
+                        .memberDesc
+                .membershipTypeOuter
+                  #overseasDiv.membershipType
+                    input#radio_2(type='radio', value='overseas', name='membershipType', ng-model='membershipType', required='')
+                    span Overseas
+                    .membershipTypeDetails
+                      div
+                        .memberTitle Overseas
+                        .memberFee £ 25 / Month
+                        .memberOr or
+                        .memberFee
+                          | £ 250
+                          | / Year
+                        .memberDesc
+                .membershipTypeOuter
+                  #underDiv.membershipType
+                    input#radio_3(type='radio', value='under', name='membershipType', ng-model='membershipType', required='')
+                    span Under 30
+                    .membershipTypeDetails
+                      div
+                        .memberTitle Under 30
+                        .memberFee £ 35 / Month
+                        .memberOr or
+                        .memberFee
+                          | £ 350
+                          | / Year
+                        .memberDesc
+                p.marginTop_5 All inclusive VAT
+              h5
+                | All information will be treated in confidence.
+                br
+                | A link will be sent to your e-mail allowing you to complete your saved application at a later date.
+              .btnWrap.text-center
+                input.formBtn(type='submit', value='NEXT', ng-click='signupValidate()', ng-disabled='signupForm.$invalid')
+          // MEMBER ABOUT YOU
+          #aboutyouWrap.tabWrap.light(rel='1')
+            .tabClose.alertMsg(backtab='#aboutyouWrap', oldid='#signupWrap')
+            .backBtn(backtab='#aboutyouWrap', oldid='#signupWrap')
+              span
+            h2 ABOUT YOU
+            .vertical-divider-1
+            form(ng-controller='aboutyouForm', name='aboutyouForm', novalidate='')
+              .formLableWrap
+                label Date of birth*
+              .formWrap.marginTop_15
+                .formWrapLeft
+                  .dateFormWrap
+                    input.txtBox(type='text', name='date', ng-model='date', ng-pattern='/^[0-9]/', placeholder='DD', maxlength='2', required='')
+                    span.errMsg(ng-show='aboutyouForm.date.$touched && aboutyouForm.date.$invalid')
+                      span(ng-show='aboutyouForm.date.$error.required') Date is required.
+                      span(ng-show='aboutyouForm.date.$error.pattern') Not a valid Date.
+                      span(ng-show='aboutyouForm.date.$error.min') Not a valid Date.
+                      span(ng-show='aboutyouForm.date.$error.max') Not a valid Date.
+                  .dateFormWrap
+                    input.txtBox(type='text', name='month', ng-model='month', ng-pattern='/^[0-9]/', placeholder='MM', maxlength='2', required='')
+                    span.errMsg(ng-show='aboutyouForm.month.$touched && aboutyouForm.month.$invalid')
+                      span(ng-show='aboutyouForm.month.$error.required') Month is required.
+                      span(ng-show='aboutyouForm.month.$error.pattern') Not a valid Month.
+                      span(ng-show='aboutyouForm.month.$error.min') Not a valid Month.
+                      span(ng-show='aboutyouForm.month.$error.max') Not a valid Month.
+                  .dateFormWrap
+                    input.txtBox(type='text', name='year', ng-model='year', ng-pattern='/^[0-9]/', placeholder='YYYY', maxlength='4', required='')
+                    span.errMsg(ng-show='aboutyouForm.year.$touched && aboutyouForm.year.$invalid')
+                      span(ng-show='aboutyouForm.year.$error.required') Year is required.
+                      span(ng-show='aboutyouForm.year.$error.pattern') Not a valid Year.
+                      span(ng-show='aboutyouForm.year.$error.min') Not a valid Year.
+                      span(ng-show='aboutyouForm.year.$error.max') Not a valid Year.
+                .formWrapRight
+                  input.txtBox(type='text', name='gender', ng-model='gender', placeholder='Gender')
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='telephone', ng-model='telephone', ng-pattern='/^[0-9\_\- \+]*$/', placeholder='Telephone*', required='')
+                  span.errMsg(ng-show='aboutyouForm.telephone.$touched && aboutyouForm.telephone.$invalid')
+                    span(ng-show='aboutyouForm.telephone.$error.required') Telephone is required.
+                    span(ng-show='aboutyouForm.telephone.$error.pattern') Not a valid Telephone.
+                .formWrapRight
+                  input.txtBox(type='text', name='address1', ng-model='address1', placeholder='Address Line 1*', required='')
+                  span.errMsg(ng-show='aboutyouForm.address1.$touched && aboutyouForm.address1.$invalid')
+                    span(ng-show='aboutyouForm.address1.$error.required') Address Line 1 is required.
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='address2', ng-model='address2', placeholder='Address Line 2')
+                .formWrapRight
+                  input.txtBox(type='text', name='city', ng-model='city', placeholder='City')
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='postcode', ng-model='postcode', placeholder='Postcode*', required='')
+                  span.errMsg(ng-show='aboutyouForm.postcode.$touched && aboutyouForm.postcode.$invalid')
+                    span(ng-show='aboutyouForm.postcode.$error.required') Postcode is required.
+                .formWrapRight
+                  input.txtBox(type='text', name='country', ng-model='country', ng-pattern='/^[a-zA-Z ]*$/', placeholder='Country')
+                  span(ng-show='aboutyouForm.country.$error.pattern') Please use only Alphabets.
+              .btnWrap.text-center
+                input.formBtn(type='submit', value='NEXT', ng-click='aboutyouValidate()', ng-disabled='aboutyouForm.$invalid')
+          // MEMBER YOUR WORK
+          #yourworkWrap.tabWrap.light(rel='2')
+            .tabClose.alertMsg(backtab='#yourworkWrap', oldid='#aboutyouWrap')
+            .backBtn(backtab='#yourworkWrap', oldid='#aboutyouWrap')
+              span
+            h2 YOUR WORK
+            .vertical-divider-1
+            form(ng-controller='yourworkForm', name='yourworkForm', novalidate='')
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='industry', ng-model='industry', placeholder='Industry*', required='')
+                  span.errMsg(ng-show='yourworkForm.industry.$touched && yourworkForm.industry.$invalid')
+                    span(ng-show='yourworkForm.industry.$error.required') Industry is required.
+                .formWrapRight
+                  input.txtBox(type='text', name='company', ng-model='company', placeholder='Company')
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='positionheld', ng-model='positionheld', placeholder='Position held*', required='')
+                  span.errMsg(ng-show='yourworkForm.positionheld.$touched && yourworkForm.positionheld.$invalid')
+                    span(ng-show='yourworkForm.positionheld.$error.required') Position held is required.
+                .formWrapRight
+                  input.txtBox(type='text', name='workemail', ng-model='workemail', placeholder='Work email')
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='workaddress1', ng-model='workaddress1', placeholder='Work address line 1')
+                  span.errMsg(ng-show='yourworkForm.workaddress1.$touched && yourworkForm.workaddress1.$invalid')
+                    span(ng-show='yourworkForm.workaddress1.$error.required') Work address line 1 is required.
+                .formWrapRight
+                  input.txtBox(type='text', name='workaddress2', ng-model='workaddress2', placeholder='Work address line 2')
+              .formWrap
+                .formWrapLeft
+                  input.txtBox(type='text', name='workpostcode', ng-model='workpostcode', placeholder='Postcode')
+                  span.errMsg(ng-show='yourworkForm.workpostcode.$touched && yourworkForm.workpostcode.$invalid')
+                    span(ng-show='yourworkForm.workpostcode.$error.required') Postcode is required.
+                .formWrapRight
+                  input.txtBox(type='text', name='worktelephone', ng-model='worktelephone', placeholder='Work telephone', ng-pattern='/^[0-9\_\- \+]*$/')
+                  span.errMsg(ng-show='yourworkForm.worktelephone.$touched && yourworkForm.worktelephone.$invalid')
+                    span(ng-show='yourworkForm.worktelephone.$error.required') Work telephone is required.
+                    span(ng-show='yourworkForm.worktelephone.$error.pattern') Not a  valid Work telephone.
+              .btnWrap.text-center
+                input.formBtn(type='submit', value='NEXT', ng-click='yourworkValidate()', ng-disabled='yourworkForm.$invalid')
+          // MEMBER WHY YOU
+          #whyyouWrap.tabWrap.light(rel='3')
+            .tabClose.alertMsg(backtab='#whyyouWrap', oldid='#yourworkWrap')
+            .backBtn(backtab='#whyyouWrap', oldid='#yourworkWrap')
+              span
+            h2 WHY YOU
+            .vertical-divider-1
+            form(ng-controller='whyyouForm', name='whyyouForm', novalidate='')
+              .formLableWrap.big
+                label Tell us why you do what you do* (300 words maximum)
+              .formWrap.big.marginTop_15
+                .formWrapFull.marginBot_30
+                  textarea#textarea_1.txtBox.txtArea(name='tellus', ng-model='tellus', placeholder='I do what I do because... ', required='')
+                  span.errMsg(ng-show='whyyouForm.tellus.$touched && whyyouForm.tellus.$invalid')
+                    span(ng-show='whyyouForm.tellus.$error.required') Tell us why you do what you do is required.
+              .formLableWrap.big
+                label Why would you like to be a member of Chess Club?* (300 words maximum)
+              .formWrap.big.marginTop_15
+                .formWrapFull
+                  textarea#textarea_2.txtBox.txtArea(name='wouldlike', ng-model='wouldlike', placeholder='I’d like to be a member because...', required='')
+                  span.errMsg(ng-show='whyyouForm.wouldlike.$touched && whyyouForm.tellus.$invalid')
+                    span(ng-show='whyyouForm.wouldlike.$error.required') Why would you like to be a member of Chess Club is required.
+              .btnWrap.text-center
+                input.formBtn(type='submit', value='NEXT', ng-click='whyyouValidate()', ng-disabled='whyyouForm.$invalid')
+          // MEMBER PAYMENT
+          #paymentWrap.tabWrap.light(rel='4')
+            .tabClose.alertMsg(backtab='#paymentWrap', oldid='#whyyouWrap')
+            .backBtn(backtab='#paymentWrap', oldid='#whyyouWrap')
+              span
+            h2 PAYMENT
+            .vertical-divider-1
+            form(ng-controller='paymentForm', name='paymentForm', novalidate='')
+              p.marginBot_15 Please confirm your membership type
+              .text-center.membershipTypeParent
+                .membershipTypeOuter
+                  #annualDiv.membershipType
+                    input#radio_4(type='radio', value='annual', name='paymentmembershipType', ng-model='membershipType', checked='')
+                    span ANNUAL
+                    .membershipTypeDetails
+                      div
+                        .memberTitle ANNUAL
+                        .memberFee £ 45 / Month
+                        .memberOr or
+                        .memberFee
+                          | £ 450
+                          | / Year
+                        .memberDesc
+                .membershipTypeOuter
+                  #overseasDiv.membershipType
+                    input#radio_5(type='radio', value='overseas', name='paymentmembershipType', ng-model='paymentmembershipType')
+                    span Overseas
+                    .membershipTypeDetails
+                      div
+                        .memberTitle Overseas
+                        .memberFee £ 25 / Month
+                        .memberOr or
+                        .memberFee
+                          | £ 250
+                          | / Year
+                        .memberDesc
+                .membershipTypeOuter
+                  #underDiv.membershipType
+                    input#radio_6(type='radio', value='under', name='paymentmembershipType', ng-model='paymentmembershipType')
+                    span Under 30
+                    .membershipTypeDetails
+                      div
+                        .memberTitle Under 30
+                        .memberFee £ 35 / Month
+                        .memberOr or
+                        .memberFee
+                          | £ 350
+                          | / Year
+                        .memberDesc
+                p.marginTop_5 All inclusive VAT
+              .formWrap.big
+                p.marginBot_15 Please choose your payment type
+              .formWrap.big
+                .radioOuterWrap
+                  .radioWrap
+                    input(type='radio', value='yearly', name='paymentType', ng-model='paymentType', required='')
+                    |                                 YEARLY
+                  .radioWrap.last
+                    input(type='radio', value='monthly', name='paymentType', ng-model='paymentType', required='')
+                    |                                 MONTHLY
+              .formWrap.big
+                p.marginBot_15 Please choose UK or International payment
+              .formWrap.big
+                .radioOuterWrap
+                  .radioWrap
+                    input(type='radio', value='uk', name='paymentMode', ng-model='paymentMode', required='')
+                    |                                 UK
+                  .radioWrap.last
+                    input(type='radio', value='international', name='paymentMode', ng-model='paymentMode', required='')
+                    |                                 INTERNATIONAL
+              .formWrap.big.margin_0_auto.height_auto
+                p No payment will be taken unless your application is successful.
+                p
+                  | Applicants who are not immediately accepted will, at the discretion of the Chess Club, be placed on a waiting list. The waiting list has no definitive period.
+              .termsWrap
+                p
+                  span.checkBoxWrap.small
+                    input#proposerdont(type='checkbox', name='terms', ng-model='terms', required='')
+                  |  I agree to the 
+                  a.nextPageBtn(href='#termsWrap') Terms of Service
+                  |  and 
+                  a.nextPageBtn(href='#privacyWrap') Privacy Policy
+                p
+                  span.checkBoxWrap.small
+                    input#proposerdont(type='checkbox', name='rules', ng-model='rules', required='')
+                  |  I have read and accepted the 
+                  a.nextPageBtn(href='#rulesWrap') Rules of the Club
+              .btnWrap.text-center
+                input.formBtn(type='submit', value='MAKE PAYMENT', ng-click='paymentValidate()', ng-disabled='paymentForm.$invalid')
+          // CONTINUE MSG POPUP
+          .continueMsgPopup
+            .continueMsg
+              p Are you sure you want to leave the application process?
+              .btnWrap
+                input.formBtn.continueLink(type='button', value='CONTINUE')
+              span.leaveLink Leave
+        ul.tabBreadcrumb
+          li.active REGISTER
+          li ABOUT YOU
+          li YOUR WORK
+          li WHY YOU
+          li PAYMENT
+        // TERMS AND SERVICE
+        #termsWrap.pageWrap
+          .pageWrapLogo
+            img.goToHome(src='img/ChessClub_Logo_w_address.svg', alt='')
+          .temsInnerWrap
+            .pageClose(pageid='#termsWrap')
+            h2 Terms & Conditions
+            h3 WHO ARE WE?
+            p
+              | This website ("Site") is operated by Chesterfield Club Ltd. ("the Proprietor"), 14 David Mews London W1U 6EQ under registered number: 10071894 ("we" "us" and "our" being interpreted accordingly).
+            h3 CONTENT ON THIS SITE
+            p
+              | Your use of this Site and its contents including, without limit, any text, data, logos, graphics, photographs, images, animations, software, apps, forms, videos, music and other audio/visual materials that you access ("Content") is subject to these Terms. Any Content that you access on this Site is either owned by us (or third parties who license such Content to us) and is made available only for your own personal use on the condition that you must not republish, post, transmit, edit, adapt, syndicate or distribute any Content without our prior written permission. The names Chess Club and other business names and logos displayed on this Site may be trademarks belonging to us ("Trade Marks").
+            p
+              | To the maximum extent legally permitted, you cannot link to or seek to extract data from this Site or reutilise any part of this Site or Content for any commercial purpose or use our Trade Marks in a way that suggests that you or your business has any endorsement from or affiliation to us without our prior written permission (at our sole discretion).
+            h3 LINKS TO OTHER WEBSITES
+            p
+              | This Site may link to third party websites from time to time. These links are provided for your convenience only. We do not control third party websites and are not responsible for their contents or how they operate. Where this Site includes any links to third party websites, this does not imply any endorsement by us of the goods, services or materials made available on such websites. You acknowledge that (to the maximum extent legally permitted and unless we state otherwise) we shall not be liable in respect of your use of those third party websites or any purchase you make through them.
+            h3 YOUR USE OF THIS SITE
+            p
+              | You must only use this Site for legal purposes in accordance with these Terms and are prohibited from using our Site to engage in any fraudulent activity or in a manner that (in our reasonable opinion) is liable to damage our business or harm other users. Your use of our Site is subject to our membership rules and other policies or guidelines that we may communicate to you from time to time.
+            p
+              | You also undertake that any personal data and other information you may provide to us when registering or signing up to any services on this Site is complete, accurate and up to date. In relation to any material you submit to us or post on this Site, you undertake to us that either you own this material or have the necessary rights, clearances and or approvals you need to submit or post such material.
+            p
+              | You agree to compensate us in relation to any third party legal actions or claims that are made against us and for any associated losses, damages or expenses (including any legal expenses) that we suffer as a result of you breaching your obligations or undertakings in this Section 4.
+            h3 OUR LIABILITY
+            p
+              | Nothing in these Terms shall exclude or limit our liability for fraud or for death or personal injury resulting from our negligence (or the negligence of our employees or agents) or where applicable law does not permit us to restrict or exclude particular obligations or liabilities.
+            p
+              | Subject the above paragraph we do not accept any liability for damage to any computer or device that you use to access this Site or in relation to any loss of data when you use this Site. In addition, we cannot guarantee that any Content you access or download is free from viruses, worms or other malware, and you should check that you have suitable, up to date virus or malware protection on your computer or device.
+            p
+              | While we will correct any errors on this Site that come to our attention as soon as we reasonably can, we do not undertake or warrant that this Site or the Content will be completely free from bugs or errors or that this Site will be available on an uninterrupted basis. You accept that access to this Site (or certain features) may be interrupted or suspended without notice in the case of IT system issues or where we need to undertake maintenance or due to other reasons beyond our reasonable control.
+            p
+              | We do not make any representation and exclude all warranties, terms or conditions (whether express or implied by law or otherwise) in respect of the Site or its Content, including, without limitation, any decision you take on the basis of information provided through this Site, except that nothing in these Terms shall exclude or restrict your statutory rights or other rights that cannot be excluded or restricted under applicable law. Except as set out above, we will not be liable for (1) any indirect, consequential or special loss or damage; or (2) any lost revenue, profits or other economic loss (whether direct or indirect), however arising from your use of this Site.
+            h3 PRIVACY & SECURITY
+            p
+              | How we collect and process your personal data and safeguard your privacy is governed by our Privacy Policy and which forms part of these Terms. We also have a Cookie Policy that governs use of cookies and other tracking technologies, which may be used on our Site.
+            h3 CHANGES TO THESE TERMS
+            p
+              | We are may amend these Terms at any time, for example, where we add new services or features or where there is a change in applicable law. All such changes will take effect once these Terms have been updated and you will be assumed to have accepted any such changes if you continue to use the Site after the latest update.
+            h3 PURCHASE OF PRODUCTS OR SERVICES
+            p
+              | If you elect to purchase any products or services which we offer to you through this Site this may be subject to new and/or additional terms and conditions which will be notified to you at the time.
+            h3 INVALIDITY & WAIVER
+            p
+              | If any of these Terms is found by a court or a regulator to be invalid or unenforceable the other provisions shall continue to apply to the maximum extent legally permitted. No waiver of any of these Terms shall be effective unless made in writing by us and a waiver (or non-enforcement) shall not be construed as a waiver of any subsequent breach.
+            h3 GOVERNING LAW
+            p
+              | In the event of any dispute between you and us concerning these Terms, the laws of England and Wales will apply. If you wish to take court proceedings against us, you should do so within England and Wales, except to the extent that applicable law in your country of residence requires mandatory application of another law and/or jurisdiction and/or language and such requirement cannot lawfully be excluded under these Terms in which case such law and/or jurisdiction and/or language shall apply, as far as legally required.
+            h3 CONTACT
+            p
+              | If you have any questions or complaints regarding the Site or these Terms, you can contact us by emailing 
+              a(href='mailto:info@chessclublondon.com') info@chessclublondon.com
+              | .
+        // PRIVACY POLICY
+        #privacyWrap.pageWrap
+          .pageWrapLogo
+            img.goToHome(src='img/ChessClub_Logo_w_address.svg', alt='')
+          .temsInnerWrap
+            .pageClose(pageid='#privacyWrap')
+            h2 PRIVACY POLICY
+            h3 WHO ARE WE?
+            p
+              | This website ("Site") is operated by Chesterfield Club Ltd. ("the Proprietor"), 14 David Mews London W1U 6EQ under registered number: 10071894 ("we" "us" and "our" being interpreted accordingly).
+            h3 WHAT IS THIS PRIVACY POLICY IS FOR?
+            p
+              | This Privacy Policy gives you information about how personal data and other private information that we collect from you as a user of this Site or as a membership applicant, member or customer ("you" or "your" being interpreted accordingly) will be used by us. When we refer to ‘personal data’ in this Policy it means any information that relates to you from which you can be identified.
+            p
+              | By using our Site or submitting your personal data you are taken to accept the terms of this Policy, so please read it carefully.
+            h3 WHAT PERSONAL DATA MAY WE COLLECT?
+            p We may collect the following personal data about you:
+            ul.list-group
+              li
+                | The personal details you provide (such as name, address, e-mail address; business address and phone number) when submitting a membership application.
+              li
+                | Information about your debit/credit card and bank account information that we require for the purpose of recording and processing your membership application (and administering your membership). For further details please also refer to the section below headed PAYMENT INFORMATION.
+              li
+                | Personal details you choose to give when corresponding with us by phone, e-mail or that you provide to us when you visit one of our clubs or other premises.
+              li
+                | We may also receive other personal or private information about you that you choose to submit to this Site or any other websites we operate.
+            h3 COOKIES
+            p
+              | Our Site uses cookies to distinguish you from other users. This is to provide you with a good user experience when you browse our Site and allows us to improve its features. For detailed information on the cookies we use, please see our Cookie Policy
+            h3 HOW WE USE YOUR DATA
+            p We may use your personal data in the following ways:
+            ul.list-group
+              li
+                | to acknowledge, confirm and deal with your membership application (and where necessary put you on our waiting list).
+              li where we are asked to deal with any enquiries or complaints you make.
+              li
+                | where you are a member, provide you with membership services and administer your membership account.
+              li
+                | we may provide you, or permit selected third party service providers to provide you with information about goods or services we feel may interest you as a member or membership applicant (for instance other companies within our group). If you are an existing member or customer of ours, we will only contact you by electronic means (such as e-mail or SMS) with information about goods and services that are similar to those which you previously purchased from us (or tried to purchase). If you are a new customer, and where we permit selected third parties to use your data, we (or they) will contact you by electronic means only if you have previously consented to this.
+              li
+                | to contact you in connection with user/customer/member surveys and use any information you choose to submit in response.
+              li
+                | to administer our Site and ensure that our Site is presented in the most effective manner for you and for your computer/device.
+              li
+                | for internal business/technical operations, including troubleshooting, data analysis, testing, research, statistical and survey purposes and as part of our efforts to keep our Site secure.
+              li
+                | we may use your personal information for other purposes which you have consented to and we may combine personal data that you provide to us with other information we collect about you for the purposes set out in this Privacy Policy.
+            h3 DISCLOSURE OF YOUR INFORMATION
+            p We may share your personal data with third parties in the following situations:
+            ul.list-group
+              li
+                | we may make your personal data available to selected third parties who act on our behalf to support our operations (for example, card processing or payment services (see the section below headed PAYMENT INFORMATION) and credit reference agencies to protect against possible fraud
+              li
+                | our IT suppliers and contractors (e.g. data hosting providers or delivery partners) may need to have access to your personal information to provide IT support and enable us to provide membership services and other goods/services available on this Site or to members
+              li
+                | if we sell our business or our company assets are acquired by a third party personal data held by us about our members or customers may be one of the transferred assets
+              li
+                | if we need to disclose your personal data to comply with a legal obligation or to enforce our General Terms & Conditions, membership rules or other applicable contract terms that you are subject to
+              li
+                | to protect us, our members or contractors against loss or damage. This may include (without limit) exchanging information with the police, courts or law enforcement organisations.
+            h3 PAYMENT INFORMATION
+            p
+              | If you submit an application for membership, you will be required to set-up a Direct Debit using our third party payment provider, GoCardless [https://gocardless.com/security/]. We do not store, or have access to, the financial information you provide to GoCardless.
+            h3 SECURITY
+            p
+              | The personal data that we collect from you may be transferred to and stored at a destination outside the European Economic Area ("EEA") by us or by third parties who provide services to us in relation to the operation of this website and/or other computer-based systems. This includes, but is not limited to, transfer and storage of your data in the United States. In accordance with applicable law, we will do everything we reasonably can to make sure that these third parties comply with appropriate security standards to protect the personal data that they handle.
+            p
+              | Please note that the US and certain other countries outside the EEA do not provide the same legal standards for protection of your personal data that you have in the United Kingdom or EEA. By submitting your personal data, you agree to the transfer and processing of your personal data outside the EEA for the purposes set out in this Privacy Policy.
+            p
+              | Where we have given you (or where you have chosen) a password or log-in which enables you to access certain restricted parts of our Site, you are responsible for doing everything you reasonably can to keep these details private. We will not to share your password or log-in details with anyone else.
+            p
+              | Unfortunately, the transmission of information over the internet or public communications networks can never be completely secure. We will take appropriate technical and organisational security measures to protect the personal data that you submit to us against unauthorised/unlawful access or loss, destruction or damage, although we cannot 100% guarantee the security of data that you provide to us online.
+            h3 YOUR DATA PROTECTION RIGHTS
+            p
+              | Certain applicable data protection laws give you a right to receive information about the personal data we hold on you. You may also have the right to ask us not to process your personal data for marketing purposes; or where the processing of your personal data is causing unwarranted damage or distress; or, ask us to delete or correct any personal data that we hold about you which is inaccurate or no longer relevant.
+            p
+              | If you wish to exercise any of these rights please contact us as described in the CONTACT section below. Any access request may be subject to a small fee to meet our costs. We may also need to ask you for further information to verify your identity before we can respond to any request.
+            h3 CHANGES TO OUR PRIVACY POLICY
+            p
+              | Any changes we may make to our Privacy Policy in the future will be posted on this page. Please check back frequently to see any updates or modifications.
+            h3 CONTACT
+            p
+              | Questions, comments or requests regarding this Privacy Policy should be addressed to 
+              a(href='mailto:info@chessclublondon.com') info@chessclublondon.com
+              |  or, by post at the above address.
+        // COOKIES POLICY
+        #cookiesWrap.pageWrap
+          .pageWrapLogo
+            img.goToHome(src='img/ChessClub_Logo_w_address.svg', alt='')
+          .temsInnerWrap
+            .pageClose(pageid='#cookiesWrap')
+            h2 Cookie Policy
+            h3 WHAT IS THIS COOKIE POLICY FOR?
+            p
+              | This website ("Site") uses cookies, pixels or similar tracking technologies (“Cookies”) to distinguish you from other users, providing you with the best possible user experience when you browse our Site and allows us to improve its features.
+            p
+              | This Cookie Policy describes the Cookies we may use on this Site and their purpose. You should also check our Privacy Policy regarding how we use your personal data when you use our Site.
+            p BY USING OUR SITE YOU CONSENT TO US USING COOKIES AS DESCRIBED IN THIS POLICY.
+            h3 WHAT ARE COOKIES?
+            p
+              | Cookies are small pieces of data that are stored on your computer, or other device when you access a website. Pixels, also known as web beacons or web bugs, are small blocks of code on webpages and in emails that do things like allow another computer server to measure viewing of a webpage. These are often are used in conjunction with Cookies. Cookies enable our computer servers to collect information from your computer or device about how you interact with our Site. You can find more background information about cookies at: www.allaboutcookies.org.
+            h3 HOW WE USE COOKIES
+            p
+              | We use Cookies to help us better understand how our Site is used and to provide you with a more user-friendly experience when you access our online services. For example, using information about your previous visits to our Site, we can tailor content to match your particular interests when you revisit our Site or use any services on it.
+            p
+              | Cookies will never be used by us to collect your sensitive personal data or financial details, such as credit card information. You can disable Cookies by adjusting the settings on your web browser (e.g. Internet Explorer; Safari; Chrome; Firefox or Opera) although this may affect your ability to fully utilise our Site.
+            p We may also use Cookies for the following purposes:
+            ul.list-group
+              li Authentication: to recognise you if you are signed in to our Site.
+              li
+                | Security: We may use Cookies to enable security features on our Site and help us detect any security threats or potential illegal activity.
+              li
+                | Performance: Some Cookies may collect information about user visits to our Site, for example which web pages visitors use most often. We might also use these performance Cookies to highlight services which we think will be of interest to you based on your previous use of our Site [To help us monitor visitor traffic to our website and understand how our Site is used, we have enabled a third party software tool 'Google Analytics' to collect data about our Site traffic. Visitors have the ability to opt-out of Google Analytics features we use. For more information please click here. Performance cookies like these do not routinely collect information that personally identifies a visitor by name so the impact on your personal privacy should be minimal.
+              li
+                | Functionality: Some Cookies allow our Site to remember information from your previous visits, such as contact details you previously submitted. For example, when you complete an online form (such as when you register for a service) we will use a cookie which (if you agree) will help remember your details if you use the same computer to complete another form on our Site without you having to re-enter them. These Cookies may also be used to provide information you request such as publications or newsletters.
+            h3 STRICTLY NECESSARY COOKIES
+            p
+              | Some Cookies are essential in order to enable you to navigate our Site or to enable you to receive a particular service you have requested. Such Cookies are regarded as ‘strictly necessary’ and we do not need to ask your permission to use them.
+            h3 THIRD PARTY COOKIES
+            p
+              | Our Site may also allow third parties to download Cookies to your device. For example if you choose to 'share' content from our Site with friends through a third party site such as Facebook or another social network, you may be sent Cookies from these third party service providers over which we have no control. If you choose to share such content, you should check the relevant third party services provider’s terms/policies for more information about cookies that they use.
+        // RULES OF THE CLUB
+        #rulesWrap.pageWrap
+          .pageWrapLogo
+            img.goToHome(src='img/ChessClub_Logo_w_address.svg', alt='')
+          .temsInnerWrap
+            .pageClose(pageid='#rulesWrap')
+            h2 RULES OF MEMBERSHIP
+            h3 THE CLUB
+            p The name of the club is Chess Club ("the Club").
+            p
+              | The Club is a proprietary private membership restaurant, bar and club, owned and operated by Chesterfield Club Ltd. ("the Proprietor"), 14 David Mews London W1U 6EQ, Registered Company Number: 10071894. The Proprietor reserves the right to charge members a joining fee and an annual subscription fee. The right to amend or waive any such fees or subscriptions shall be in the Proprietor’s sole discretion.
+            h3 OBJECTIVE
+            p
+              | The objective of the Club is to promote and provide food, beverage and recreational facilities for its members and members’ guests.
+            h3 PRELIMINARY MATTERS
+            p
+              | The Proprietor provides the Club with Club Premises and all necessary facilities for carrying on the Club in accordance with the objects of the Club and these rules and any by-laws.
+            p
+              | The Club premises shall be located at 1A Chesterfield Street London W1J 5JG ("the Club Premises").
+            p
+              | The Proprietor shall appoint a membership committee ("the Membership Committee") to operate the Club on an on-going basis however the Proprietor retains the ultimate say on all matters. Their decision shall be binding on any Committee and all categories of membership.
+            p
+              | Any reference in these rules to the Proprietor refers to both the owners and the operators of the Club Premises.
+            p
+              | These rules shall be applicable to all categories of Membership and their guests.
+            h3 MEMBERSHIP COMMITTEE
+            p
+              | The Membership Committee is appointed by the Proprietor. The Membership Committee has the right to refuse any application for membership without giving reason. The Membership Committee will not enter into any correspondence in relation to fees.
+            h3 MEMBERSHIP
+            p
+              | Membership is open to people aged 18 years and shall be open without discrimination, which is unlawful under the Equality Act 2010. The applicant will submit an application form online. Any inaccuracy in or omission from an application may render it void at the discretion of the Membership Committee. Membership is non transferable.
+            p
+              | A candidate may not be admitted to membership (or, as a candidate for membership, be admitted to the privileges of membership) without an interval of at least 48 hours between their nomination or application for membership and their admission as a member of the Club.
+            p
+              | Upon election or admission, the member will be notified accordingly and they will be provided with a copy of the rules. The member shall be bound by all rules and by-laws, which may be made or varied from time to time.
+            p
+              | The elected or admitted member shall not be entitled to any privileges of Membership until he or she has paid their entrance fee and initial subscription.
+            p
+              | The Proprietor and Membership Committee shall have discretion to introduce different categories of Membership, for example: corporate members; lifetime members; ambassador members and/or honorary members.
+            h3 JOINT MEMBERSHIP
+            p
+              | Joint membership is available to married couples and those in civil partnerships. If the couple ceases to be married or their civil partnership ends, then each member will be charged for memberships fees at the full individual rate the following year. Joint members are jointly liable for membership fees and charges for food and beverages purchased at the Club.
+            h3 OVERSEAS MEMBERSHIP
+            p
+              | Overseas Membership is available to people who spend more than nine months per year abroad with their primary address overseas.
+            h3 UNDER 30 MEMBERSHIP
+            p
+              | Under 30 Membership is available to successful applicants aged between 18 and 30 years old. After your 30th birthday, annual membership fees will be adjusted.
+            h3 FEES
+            p
+              | The annual subscription fee and the joining fee are determined by the Proprietor and may be changed at any time. Upon approval of your membership, your membership fees are payable immediately. By providing us with your credit card details and/or bank details for Direct Debit, you accept and consent to being charged with membership fees upon your application being approved or renewed. Cheques are not accepted as payment for fees.
+            p
+              | Membership is for a minimum of one year and renewable thereafter on an annual basis. If you have selected monthly payment and choose to resign your membership or your membership is cancelled part way through the year, it is at the discretion of the Proprietor or Membership Committee whether you have to pay for the remainder of the year in accordance with the resignation provisions below.
+            p All membership fees are to be paid to the Club and never to any other party.
+            p
+              | Failure to pay the annual subscription within one month of the due date after being notified by management will result in membership being terminated.
+            h3 APPLYING FOR MEMBERSHIP
+            p
+              | An application form is available online at 
+              a(href='http://www.chessclublondon.com/') www.chessclublondon.com
+              | . The Membership Committee meets quarterly and admits new members as space becomes available. A valid form of identification is required to verify eligibility for membership.
+            p
+              | The Club shall use all reasonable endeavours to ensure that no applicant, member or guest receives less favourable treatment on the grounds of their sex, race, religion or belief, disability, marital status, age, religion, sexual orientation, nationality, colour or ethnic origin.
+            h3 MEMBERSHIP CARDS
+            p
+              | Membership cards must be presented to the reception on entry. Any member who allows his or her card to be used by a non-member will have their membership terminated.
+            h3 GUESTS
+            p
+              | Members are permitted up to four guests. Members’ guests may not enter the Club Premises without the member present. Members must not sit separately to their guests or allow their guests to remain in the Club when they leave. Members are responsible for ensuring their guests follow all Club rules and policies, and can face suspension or termination of membership if their guests violate those rules. The guest of a member must sign and write his/her name in the book supplied for that purpose. Former members who have been expelled, members who are under suspension or persons who have been rejected membership may not be admitted as guests to the Club. The Proprietor reserves the right to refuse admission to the Club Premises.
+            h3 COMMUNICATION WITH THE CLUB
+            p
+              | All members shall be under a continuing duty to notify the Club Committee of their up-to-date postal address, telephone number and email address. Any notices required to be given by the Club to members may be sent by post, email or posted on the Club’s website. Posted notices shall be deemed to arrive two days after being posted by the Club. Electronic notices shall be deemed to arrive immediately after being sent by the Club.
+            h3 BOOKINGS/RESERVATIONS
+            p
+              | Reservations can be made by telephone or e-mail but must be cancelled or amended by telephone. Failure to fulfill a reservation may result in a cancellation fee determined by the Proprietor.
+            h3 ANIMALS
+            p
+              | We welcome small to medium sized dogs in the Club if they are house trained and well behaved. Please be considerate of other members if you bring a dog to the Club and keep it under your supervision at all times.
+            h3 CHILDREN
+            p
+              | We welcome children in the Club before 19:00 if they are house trained and well behaved. Please be considerate of other members when you bring children to the Club and keep them under your close supervision and away from bar areas at all times.
+            h3 ATTIRE
+            p
+              | There is no dress code at Chess Club; however, members and guests are asked to maintain an acceptable standard of dress.
+            h3 MOBILE PHONES/LAPTOPS/TABLETS
+            p
+              | Mobile phones, laptops and tablets are allowed throughout the Club; however, please be considerate of other members when using them. Films, videos and music should only be played through headphones and must not be audible to other members.
+            h3 STAFF
+            p
+              | The appointment and dismissal of all employees is at the sole discretion of the Proprietor. Members and their guests are expected to conduct themselves in a courteous manner with the Club’s employees.
+            h3 PRIVATE PARTIES
+            p
+              | We may occasionally close the Club to members for private events. Please contact 
+              a(href='mailto:events@chessclublondon.com') events@chessclublondon.com
+              |  if you are interested in hiring any of the spaces.
+            h3 CAMERAS AND RECORDING DEVICES
+            p
+              | No cameras, video or recording devices may be used while in the Club. The Club reserves the right to confiscate recording devices and any photos, videos or other recorded images used or taken while on Club premises.
+            h3 PRIVACY FOR MEMBERS/GUESTS
+            p
+              | Members and their guests must not approach or solicit other people in the Club who they do not know personally. Doing so may lead to expulsion from the Club.
+            h3 PRESS/SOCIAL MEDIA
+            p
+              | The Club is a strictly press and social media free zone. Members will be expelled from the Club, and potentially have their membership suspended or terminated, if they or their guests communicate information to the press or on social media regarding other members, guests, or Club affairs.
+            h3 CONFIDENTIALITY
+            p
+              | The Club maintains full confidentiality regarding the records and personal information of its members, except in cases of legitimate police inquiry and/or otherwise in accordance with the Data Protection Act 1998.
+            h3 BILLS AND CREDIT
+            p
+              | There are credit facilities available at Chess Club – members who have given a direct debit instruction to the Club may choose to make a payment for food and drink this way although the Club reserves the right to ask for bills to be settled immediately. The direct debit will be drawn shortly after the charges are incurred. The Club may limit the sizes of these charges. Members are responsible for any unpaid bills of their guests.
+            h3 MEMBERSHIP RENEWAL
+            p
+              | Membership renewals are not automatic, but reviewed annually by Membership Committee. The decision on renewal is final and cannot be appealed.
+            h3 RESIGNATION
+            p
+              | Members may resign their membership at any time. Refund of any unredeemed portion of the annual membership fee is at the discretion of the Proprietor and/or Membership Committee.
+            h3 EXPULSION OF A MEMBER
+            p
+              | The Proprietor and/or Membership Committee shall have the power to suspend for a period not exceeding 90 days or to expel any member whose conduct, whether within the Club Premises or elsewhere, is in the opinion of the Proprietor and/or Membership Committee injurious to the good name of the Club or renders them unsuitable for membership.
+            p
+              | The following non-exhaustive list of behaviours will result in the immediate expulsion from Club Premises of those responsible, along with any accompanying members or guests, and may, at the complete discretion of the Proprietor and/or Membership Committee result in suspension or termination of membership:
+            ul.list-group
+              li
+                | Any form of discrimination, harassment or bullying towards any other member, guest or employee of the Club
+              li Violent, abusive or intimidating behaviour
+              li Serious insubordination and misconduct under the influence of alcohol
+              li
+                | Deliberate removal, damage or destruction of property belonging to the Club, its members or its guests
+              li
+                | Any disclosure to the press or social media of information regarding other members, guests or Club affairs
+              li Betting or gambling for money in the Club
+              li Ingesting, possessing or distributing illegal drugs on Club Premises
+              li Any conduct capable of endangering or imperiling the Club’s Premises License
+              li
+                | Any conduct, either inside or outside the house, likely to damage the Club’s reputation
+              li
+                | Any action, within or outside the Club Premises, likely to cause a disturbance to residents in the local area
+              li Improper use of Club membership card
+            p
+              | The Membership Committee shall have the power to operate a system of member disciplinary proceedings for dealing with complaints made in respect of any member act or omission, which in the opinion of the Membership Committee is discreditable or prejudicial to the interests of the Club.
+            h3 TERMINATION OF MEMBERSHIP
+            p
+              | Termination of membership is ultimately at the discretion of the Proprietor. The decision is final and cannot be appealed.
+            p
+              | Those who have had their membership terminated will not be refunded the unredeemed portion of their annual membership fee and cannot return to the Club as a guest in future.
+            h3 RIGHTS AND PRIVILEGES OF MEMBERSHIP
+            p
+              | All members are entitled to the full rights and privileges of the Club, but have no proprietary rights with regard to Club Premises, anything found therein, or any other Club property.
+            h3 DISSOLUTION
+            p The Club may be dissolved by the Proprietor at any time.
+            h3 SMOKING
+            p
+              | No smoking is allowed inside the Club at any time. All members and their guests are obligated to abide by all applicable no-smoking governmental laws.
+            h3 CODE OF CONDUCT AND LICENSING CONDITIONS
+            p
+              | Members and their guests are asked to be mindful of the residents on Chesterfield Street and to enter and leave the Club quietly. Disturbances by members or their guests on the street may result in termination of membership.
+            p
+              | The sale or supply of alcohol and other licensable activities l in the Club is permitted within the hours and conditions permitted under the Premises License in respect of the Club Premises. Members and guests must not engage in any behavior or activity that breaches or imperils the Club’s Premises License.
+            h3 LIABILITY OF THE PROPRIETOR
+            p
+              | All property brought into the Club by any member or their guest shall be at their sole risk and neither the Proprietor nor any employee of the Club shall be liable for any loss or damage to any such property.
+            p
+              | The Proprietor, its employees, and agents shall not be liable to any member or guest of a member for any injury suffered by them or their property. However, nothing in these Rules and Regulations shall be deemed to exclude the Club’s liability for death and/or personal injury arising out of any negligent or unlawful act by the Club.
+            h3 DISPUTE OF THE RULES
+            p
+              | In the event of any dispute arising as to the meaning or interpretation of these rules, the matter shall be referred to the Membership Committee and Proprietor, whose decision shall be final.
+            p
+              | These rules shall be governed and construed in accordance with English law and you agree to submit to the exclusive jurisdiction of the courts of England and Wales.
+            h3 NOTICES
+            p
+              | The Proprietor may alter or revoke the rules of the Club at any time. Such alterations shall be deemed to have been brought to the notice of members provided that a copy is conspicuously displayed on the Club’s official website 
+              a(href='http://www.chessclublondon.com/') www.chessclublondon.com
+              |  or in accordance with the communication provisions above.
+            h3 CHESS CLUB TRADEMARK RIGHTS
+            p
+              | All members and their guests shall not use the names, logos, colours, trade marks, service marks, photographs, trade dress, or other identifying features of Chess Club (the "Chess Club Marks") without obtaining the specific prior written approval of the Proprietor as to the specific use. You hereby expressly recognise that the Chess Club Marks are the valid, unique and exclusive property of Chess Club, its parent, affiliates and/or subsidiaries. Members and their guests may not produce or create, or authorise others to produce or create, the Chess Club Marks for any purpose whatsoever, including, but not limited to, in any communications, marketing, advertising or other promotional materials (including, but not limited to, brochures, flyers, invitations, e-mail messages, etc.) that utilize the Chess Club Marks without the Proprietor’s prior written consent.
+            h3 CCTV
+            p
+              | Chess Club employs the use of CCTV cameras and operates them within a strict Code of Practice. All CCTV Operators are trained to operate within this Code of Practice and all relevant legislation. The system has been registered under the Data Protection Act 1998 and operates within the guidelines laid down by the Information Commissioner. The system is operated in accordance with the Human Rights Act 1998, the Regulation of Investigatory Powers Act 2000 and the Freedom of Information Act 2000.
+            p
+              | Images recorded by the CCTV cameras are retained for 31 days and are then wiped unless required for an ongoing investigation by an enforcement agency. CCTV footage may be provided to the authorities as part of an investigation or otherwise required by the CCTV conditions imposed on the Club’s Premises License. No images are provided for commercial, entertainment or any other purposes.
+    footer
+      .desktop
+        .footerSection_left
+          a.pin(href='https://goo.gl/maps/w6TA3KGF1eq', target='_blank')
+            em
+              img.pin_img(src='img/pin.svg', alt='')
+              img.pin_blue_img(src='img/pin_blue.svg', alt='')
+            |  1A chesterfield street w1 london
+          |    • 
+          a(href='mailto:reservations@chessclublondon.com') reservations@chessclublondon.com
+        .footerSection_right
+          a.nextPageBtn.footer(href='#rulesWrap') club rules
+          span.applyMembership APPLY FOR MEMBERSHIP
+        .footerSection_center
+          a.nextPageBtn.footer.small(href='#termsWrap') TERMS & CONDITIONS
+          |    •   
+          a.nextPageBtn.footer.small(href='#privacyWrap') PRIVACY POLICY
+          |    •   
+          a.nextPageBtn.footer.small(href='#cookiesWrap') Cookies Policy
+          em.small ©  2016 CHESS CLUB
+      .footerSection.mobile
+        p
+          a.pin(href='https://goo.gl/maps/w6TA3KGF1eq', target='_blank')
+            em
+              img.pin_img(src='img/pin.svg', alt='')
+              img.pin_blue_img(src='img/pin_blue.svg', alt='')
+            br
+            |                 1A chesterfield street
+            br
+            |                 w1 london
+          br
+          |                 •
+          br
+          br
+          a(href='mailto:membershipassistant@chessclublondon.com') membershipassistant@chessclublondon.com
+          br
+          |                 •
+          br
+          a.nextPageBtn(href='#termsWrap') TERMS & CONDITIONS
+          br
+          a.nextPageBtn(href='#privacyWrap') PRIVACY POLICY
+          br
+          a.nextPageBtn(href='#cookiesWrap') Cookies Policy
+          br
+          |                 © 2016 CHESS CLUB
+        a.nextPageBtn.clubBtn(href='#rulesWrap') club rules
+        span.applyMembership APPLY FOR MEMBERSHIP
+    // /Page Content
+    .pageMask
+    .pageLoader
+      img(src='img/Gold-Loader_middle.gif', alt='')
+      .cssload-loader
